@@ -16,8 +16,9 @@ int main(){
 
         return resultado;
     };
-
+   
     //programa que calcula la potencia de un numero usando una funcion lambda
+    cout <<"\n==============================================\n"<< endl;
     cout << "Ingrese la base: ";
     cin >> num;
     cout << "Ingrese el exponente: ";
@@ -25,21 +26,6 @@ int main(){
     cout << "El resultado es: " << calcularPow(num, exponente) << endl;
 
     cout <<"\n==============================================\n"<< endl;
-
-    //funcion lambda que calcula el factorial de un numero
-    auto calcularFactorial = [](int num){
-        int resultado = 1;
-        for(int i = 1; i <= num; i++){
-            resultado *= i;
-        }
-
-        return resultado;
-    };
-
-    //programa que calcula el factorial de un numero usando una funcion lambda
-    cout << "Ingrese el numero: ";
-    cin >> num;
-    cout << "El factorial es: " << calcularFactorial(num) << endl;
     
 
     return 0;
